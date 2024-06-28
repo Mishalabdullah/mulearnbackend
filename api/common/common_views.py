@@ -506,8 +506,8 @@ class GlobalCountAPI(APIView):
             Organization.objects.filter(
                 org_type__in=[
                     OrganizationType.COLLEGE.value,
-                    OrganizationType.COMPANY.value,
-                    OrganizationType.COMMUNITY.value,
+                    200,
+                    25,
                 ]
             )
             .values("org_type")
